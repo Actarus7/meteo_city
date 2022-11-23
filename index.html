@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="/script.js" defer></script>
     <title>Meteo City</title>
 </head>
-<body>
-    <h1>METEO CITY</h1>
-    <form id="entrerVilleForm">
-        <input id="entrerVille" placeholder="Entrez ici votre ville">
-    </form>
-    <section id="meteoVille">
-        <h2></h2>
-        <p id=imageTemp>
-            <img>
-            <span></span>
-        </p>
-        <p id="vent"></p>
-        <p id="humidite"></p>
+
+<body class="bg-warning bg-gradient bg-opacity-25">
+    <h1 class="text-center container bg-secondary bg-gradient border p-4">METEO CITY</h1>
+    <div class="p-4">
+        <form id="entrerVilleForm" class="text-center">
+            <input id="entrerVille" class="rounded" placeholder="Entrez ici votre ville">
+            <input id="lancerRecherche" type="button" value="Lancer la recherche">
+        </form>
+    </div>    
+
+
+
+    <div id="meteoVille" class="invisible container bg-secondary bg-gradient border text-center">
+        <h2 class="p-3"></h2>
+
+
+        <div id="imageTemp" class="row border-top border-bottom">
+            <img class="col">
+            <div id="temperatures" class="col align-self-center fs-5 border-start">
+                <p id="temperature"></p>
+                <p id="tMin"></p>
+                <p id="tMax"></p>
+                <p id="tRessentie"></p>
+            </div>
+        </div>
+
+
+
+        <div class="row fs-5">
+            <p id="ventForce" class="col"></p>
+            <p id="ventDir" class="col border-start align-self-center"></p>
+            <p id="humidite" class="col border-start align-self-center"></p>
+        </div>
+    </div>
+    </div>
+
 
 
     </section>
-    
+
 </body>
+
 </html>
