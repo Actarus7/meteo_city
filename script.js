@@ -18,11 +18,11 @@ function getWeatherInfos(ville) {
         const urlOpenWeatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=${API_key}&units=metric`;
         fetch(urlOpenWeatherAPI)
         .then(function(promise){
-            console.log(promise);
+            //console.log(promise);
             return promise.json();
         })
         .then(function(data){
-            console.log(data);
+            //console.log(data);
             return data;
         })
         .then(function(data){
